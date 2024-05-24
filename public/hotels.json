@@ -1,0 +1,79 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Modern City Apartment",
+      "segment_name": "Residential",
+      "description": "Stylish apartment in the heart of the city with stunning views. Nestled in a peaceful suburban neighborhood, this charming home offers the perfect retreat for families seeking comfort and tranquility. Boasting timeless appeal and modern amenities, this spacious residence welcomes you with open arms. Step inside to discover a warm and inviting atmosphere, where natural light floods the airy interiors, creating a sense of serenity and relaxation. The heart of the home features a well-appointed living area, ideal for cozy gatherings and memorable family moments. The fully-equipped kitchen is a chef's delight, complete with sleek countertops, ample storage space, and top-of-the-line appliances, inspiring culinary creativity and culinary adventures. Venture outdoors to the expansive backyard, where lush greenery and manicured landscaping provide an idyllic setting for outdoor entertaining and play.",
+      "price": "$500,000",
+      "status": "rent",
+      "area": "1000 sq ft",
+      "location": "New York City, NY",
+      "facilities": ["Balcony", "Fitness center", "Doorman"],
+      "image": "https://images.pexels.com/photos/280232/pexels-photo-280232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 2,
+      "estate_title": "Cozy Suburban Home",
+      "segment_name": "Residential",
+      "description": "Charming suburban home perfect for families. Nestled in a peaceful suburban neighborhood, this charming home offers the perfect retreat for families seeking comfort and tranquility. Boasting timeless appeal and modern amenities, this spacious residence welcomes you with open arms. Step inside to discover a warm and inviting atmosphere, where natural light floods the airy interiors, creating a sense of serenity and relaxation. The heart of the home features a well-appointed living area, ideal for cozy gatherings and memorable family moments. The fully-equipped kitchen is a chef's delight, complete with sleek countertops, ample storage space, and top-of-the-line appliances, inspiring culinary creativity and culinary adventures. Venture outdoors to the expansive backyard, where lush greenery and manicured landscaping provide an idyllic setting for outdoor entertaining and play.",
+      "price": "$1,350,000",
+      "status": "sale",
+      "area": "2000 sq ft",
+      "location": "Suburbia, CA",
+      "facilities": ["Backyard", "Garage", "Fireplace"],
+      "image": "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    
+   
+    {
+      "id": 3,
+      "estate_title": " Countryside Cottage",
+      "segment_name": "Residential",
+      "description": "Escape to the countryside in this quaint cottage retreat. Nestled in a peaceful suburban neighborhood, this charming home offers the perfect retreat for families seeking comfort and tranquility. Boasting timeless appeal and modern amenities, this spacious residence welcomes you with open arms. Step inside to discover a warm and inviting atmosphere, where natural light floods the airy interiors, creating a sense of serenity and relaxation. The heart of the home features a well-appointed living area, ideal for cozy gatherings and memorable family moments. The fully-equipped kitchen is a chef's delight, complete with sleek countertops, ample storage space, and top-of-the-line appliances, inspiring culinary creativity and culinary adventures. Venture outdoors to the expansive backyard, where lush greenery and manicured landscaping provide an idyllic setting for outdoor entertaining and play.",
+      "price": "$1,250,000",
+      "status": "sale",
+      "area": "1500 sq ft",
+      "location": "Rural, TX",
+      "facilities": ["Garden", "Fire pit", "Wood stove"],
+      "image": "https://images.pexels.com/photos/1571457/pexels-photo-1571457.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": 4,
+      "estate_title": "Beachfront Villa",
+      "segment_name": "Residential",
+      "description": "Luxurious beachfront villa with panoramic ocean views. Nestled in a peaceful suburban neighborhood, this charming home offers the perfect retreat for families seeking comfort and tranquility. Boasting timeless appeal and modern amenities, this spacious residence welcomes you with open arms. Step inside to discover a warm and inviting atmosphere, where natural light floods the airy interiors, creating a sense of serenity and relaxation. The heart of the home features a well-appointed living area, ideal for cozy gatherings and memorable family moments. The fully-equipped kitchen is a chef's delight, complete with sleek countertops, ample storage space, and top-of-the-line appliances, inspiring culinary creativity and culinary adventures. ",
+      "price": "$1,200,000",
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "Miami Beach, FL",
+      "facilities": ["Private beach access", "Pool", "Outdoor kitchen"],
+      "image": "https://images.pexels.com/photos/2098443/pexels-photo-2098443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 5,
+      "estate_title": "Mountain View Retreat",
+      "segment_name": "Residential",
+      "description": "Spectacular mountain views await at this tranquil retreat. Nestled in a peaceful suburban neighborhood, this charming home offers the perfect retreat for families seeking comfort and tranquility. Boasting timeless appeal and modern amenities, this spacious residence welcomes you with open arms. Step inside to discover a warm and inviting atmosphere, where natural light floods the airy interiors, creating a sense of serenity and relaxation. The heart of the home features a well-appointed living area, ideal for cozy gatherings and memorable family moments. The fully-equipped kitchen is a chef's delight, complete with sleek countertops, ample storage space, and top-of-the-line appliances, inspiring culinary creativity and culinary adventures. Venture outdoors to the expansive backyard, where lush greenery and manicured landscaping provide an idyllic setting for outdoor entertaining and play.",
+      "price": "$600,000",
+      "status": "rent",
+      "area": "1800 sq ft",
+      "location": "Boulder, CO",
+      "facilities": ["Deck", "Hot tub", "Hiking trails"],
+      "image": "https://images.pexels.com/photos/276554/pexels-photo-276554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 6,
+      "estate_title": "Lakeside Cabin",
+      "segment_name": "Residential",
+      "description": "Cozy cabin nestled by the lake, perfect for a weekend getaway. Nestled in a peaceful suburban neighborhood, this charming home offers the perfect retreat for families seeking comfort and tranquility. Boasting timeless appeal and modern amenities, this spacious residence welcomes you with open arms. Step inside to discover a warm and inviting atmosphere, where natural light floods the airy interiors, creating a sense of serenity and relaxation. The heart of the home features a well-appointed living area, ideal for cozy gatherings and memorable family moments. The fully-equipped kitchen is a chef's delight, complete with sleek countertops, ample storage space, and top-of-the-line appliances, inspiring culinary creativity and culinary adventures. Venture outdoors to the expansive backyard, where lush greenery and manicured landscaping provide an idyllic setting for outdoor entertaining and play. ",
+      "price": "$400,000",
+      "status": "rent",
+      "area": "1200 sq ft",
+      "location": "Lake Tahoe, NV",
+      "facilities": ["Dock", "Fire pit", "Canoe"],
+      "image": "https://images.pexels.com/photos/1648771/pexels-photo-1648771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ]
+
+
+  
