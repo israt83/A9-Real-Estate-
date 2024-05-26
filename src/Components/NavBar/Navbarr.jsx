@@ -140,7 +140,7 @@ const Navbarr = () => {
                                 <img src={user.photoURL || "https://i.ibb.co/y0yrnYQ/1681283571946.jpg"} alt="User Avatar" />
                             </div>
                         </label>
-                        <ul className={`menu menu-sm mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ${dropdownVisible ? 'block' : 'hidden'}`} onClick={closeDropdown}>
+                        <ul className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ${dropdownVisible ? 'block' : 'hidden'}`} onClick={closeDropdown}>
                             <li>
                                 <button className="btn btn-sm btn-ghost">{user.displayName || 'User Name Not Found'}</button>
                             </li>
@@ -148,7 +148,7 @@ const Navbarr = () => {
                                 <button onClick={logout} className="btn btn-sm btn-ghost">Logout</button>
                             </li>
                             <li>
-                                <Link to='/updateProfile'>
+                                <Link to='/'>
                                 <button  className="btn btn-sm btn-ghost">UpdateProfile</button>
 
                                 </Link>
