@@ -14,7 +14,8 @@ import Root from "./Root";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import Details from "./Pages/Details/Details";
 import Contact from "./Pages/Contact/Contact";
-import Blog from "./Pages/Blog/Blog";
+// import Blog from "./Pages/Blog/Blog";
+import UpdateProfile from "./Pages/Login/UpdateProfile";
 
 
 
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "register",
         element: <Register />,
+      },
+      {
+        path: "updateProfile",
+        element: <UpdateProfile/>,
       },
     ],
   },

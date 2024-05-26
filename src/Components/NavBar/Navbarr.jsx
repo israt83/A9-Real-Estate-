@@ -79,7 +79,7 @@
 // };
 
 // export default Navbarr;
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
@@ -148,8 +148,12 @@ const Navbarr = () => {
                                 <button onClick={logout} className="btn btn-sm btn-ghost">Logout</button>
                             </li>
                             <li>
-                                <button onClick={<></>} className="btn btn-sm btn-ghost">UpdateProfile</button>
+                                <Link to='/updateProfile'>
+                                <button  className="btn btn-sm btn-ghost">UpdateProfile</button>
+
+                                </Link>
                             </li>
+
                         </ul>
                     </div>
                 ) : (
