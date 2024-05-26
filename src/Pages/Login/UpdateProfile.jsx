@@ -1,119 +1,106 @@
-// import  { useState, useEffect } from 'react';
-// import firebase from 'firebase/app';
-// import 'firebase/auth';
-// import 'firebase/firestore';
+// import { useState, useEffect } from 'react';
+// import useAuth from "../../hooks/useAuth";
+// import { useNavigate } from 'react-router-dom';
 
 // const UpdateProfile = () => {
-//   const [user, setUser] = useState(null);
-//   const [name, setName] = useState('');
-//   const [photoURL, setPhotoURL] = useState('');
+//   const { user, updateUserProfile } = useAuth();
+//   const [displayFirstName, setDisplayFirstName] = useState(user?.displayName || '');
+//   const [displayLastName, setDisplayLastName] = useState(user?.displayName || '');
+//   const [photoURL, setPhotoURL] = useState(user?.photoURL || '');
+//   const navigate = useNavigate();
 
 //   useEffect(() => {
-//     const unsubscribe = firebase.auth().onAuthStateChanged((currentUser) => {
-//       if (currentUser) {
-//         setUser(currentUser);
-//         // Retrieve user data from Firestore
-//         firebase.firestore().collection('users').doc(currentUser.uid).get()
-//           .then((doc) => {
-//             if (doc.exists) {
-//               const userData = doc.data();
-//               setName(userData.name);
-//               setPhotoURL(userData.photoURL);
-//             }
-//           })
-//           .catch((error) => {
-//             console.error('Error getting user data:', error);
-//           });
-//       } else {
-//         setUser(null);
-//       }
-//     });
+//     if (user) {
+//       setDisplayFirstName(user.displayName);
+//       setDisplayLastName(user.displayName);
+//       setPhotoURL(user.photoURL);
+//     }
+//   }, [user]);
 
-//     return () => unsubscribe();
-//   }, []);
-
-//   const handleSaveChanges = () => {
-//     // Update user profile using Firebase's updateProfile method
-//     user.updateProfile({
-//       displayName: name,
-//       photoURL: photoURL,
-//     }).then(() => {
-//       // Update user data in Firestore
-//       firebase.firestore().collection('users').doc(user.uid).update({
-//         name: name,
-//         photoURL: photoURL,
-//       }).then(() => {
-//         console.log('User profile updated successfully');
-//       }).catch((error) => {
-//         console.error('Error updating user data:', error);
-//       });
-//     }).catch((error) => {
-//       console.error('Error updating user profile:', error);
-//     });
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     try {
+//       await updateUserProfile(displayFirstName,displayLastName, photoURL);
+//       alert('Profile updated successfully');
+//       navigate('/');
+//     } catch (error) {
+//       console.error("Error updating profile: ", error);
+//       alert('Failed to update profile');
+//     }
 //   };
 
-//   if (!user) {
-//     return <div>Please login to view your profile</div>;
-//   }
-
 //   return (
-//     <>
-//       <h2>Your Profile</h2>
-//       <form>
-//         <label>
-//           Name:
-//           <input
-//             type="text"
-//             value={name}
-//             onChange={(e) => setName(e.target.value)}
-//           />
-//         </label>
-//         <br />
-//         <label>
-//           Photo URL:
-//           <input
-//             type="text"
-//             value={photoURL}
-//             onChange={(e) => setPhotoURL(e.target.value)}
-//           />
-//         </label>
-//         <br />
-//         <button type="button" onClick={handleSaveChanges}>Save Changes</button>
-//       </form>
-//     </>
+//     <div>
+//       <h2>Update Profile</h2>
+//       <div className="hero min-h-screen">
+//         <div className="hero-content flex-col lg:flex-row-reverse">
+//           <form onSubmit={handleSubmit} className="card flex-shrink-0 w-full lg:w-[500px] shadow-2xl bg-base-100">
+//             <div className="card-body">
+//               <div className="flex gap-4">
+//                 <div className="form-control w-1/2">
+//                   <label className="label">
+//                     <span className="label-text">First Name</span>
+//                   </label>
+//                   <input
+//                     type="text"
+//                     placeholder="First name"
+//                     className="input input-bordered"
+//                     value={displayFirstName}
+//                     onChange={(e) => setDisplayFirstName(e.target.value)}
+//                   />
+//                 </div>
+//                 <div className="form-control w-1/2">
+//                   <label className="label">
+//                     <span className="label-text">Last Name</span>
+//                   </label>
+//                   <input
+//                     type="text"
+//                     placeholder="Last name"
+//                     className="input input-bordered"
+//                     value={displayLastName}
+//                     onChange={(e) => setDisplayLastName(e.target.value)}
+//                   />
+//                 </div>
+//               </div>
+//               <div className="form-control">
+//                 <label className="label">
+//                   <span className="label-text">Photo URL</span>
+//                 </label>
+//                 <input
+//                   type="text"
+//                   placeholder="Photo URL"
+//                   className="input input-bordered"
+//                   value={photoURL}
+//                   onChange={(e) => setPhotoURL(e.target.value)}
+//                 />
+//               </div>
+//             </div>
+//             <button className='btn btn-neutral' type="submit">Save Changes</button>
+//           </form>
+//         </div>
+//       </div>
+//     </div>
 //   );
 // };
 
 // export default UpdateProfile;
 
-
-
-// const UpdateProfile = () => {
-//     return (
-//         <div>
-//             <h2>This is UpdateProfile section</h2>
-//         </div>
-//     );
-// };
-
-// export default UpdateProfile;
-
-// UpdateProfile.jsx
-import  { useState, useEffect } from 'react';
-// import { useAuth } from "../../hooks/useAuth"; 
-// Ensure this hook provides user and updateUserProfile methods
+import { useState, useEffect } from 'react';
 import useAuth from "../../hooks/useAuth";
 import { useNavigate } from 'react-router-dom';
 
 const UpdateProfile = () => {
   const { user, updateUserProfile } = useAuth();
-  const [displayName, setDisplayName] = useState(user?.displayName || '');
+  const [displayFirstName, setDisplayFirstName] = useState('');
+  const [displayLastName, setDisplayLastName] = useState('');
   const [photoURL, setPhotoURL] = useState(user?.photoURL || '');
   const navigate = useNavigate();
 
   useEffect(() => {
     if (user) {
-      setDisplayName(user.displayName);
+      const [firstName, lastName] = user.displayName ? user.displayName.split(' ') : ['', ''];
+      setDisplayFirstName(firstName);
+      setDisplayLastName(lastName);
       setPhotoURL(user.photoURL);
     }
   }, [user]);
@@ -121,6 +108,7 @@ const UpdateProfile = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      const displayName = `${displayFirstName} ${displayLastName}`;
       await updateUserProfile(displayName, photoURL);
       alert('Profile updated successfully');
       navigate('/');
@@ -133,27 +121,57 @@ const UpdateProfile = () => {
   return (
     <div>
       <h2>Update Profile</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Name:</label>
-          <input
-            type="text"
-            value={displayName}
-            onChange={(e) => setDisplayName(e.target.value)}
-          />
+      <div className="hero min-h-screen">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+          <form onSubmit={handleSubmit} className="card flex-shrink-0 w-full lg:w-[500px] shadow-2xl bg-base-100">
+            <div className="card-body">
+              <div className="flex gap-4">
+                <div className="form-control w-1/2">
+                  <label className="label">
+                    <span className="label-text">First Name</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="First name"
+                    className="input input-bordered"
+                    value={displayFirstName}
+                    onChange={(e) => setDisplayFirstName(e.target.value)}
+                  />
+                </div>
+                <div className="form-control w-1/2">
+                  <label className="label">
+                    <span className="label-text">Last Name</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Last name"
+                    className="input input-bordered"
+                    value={displayLastName}
+                    onChange={(e) => setDisplayLastName(e.target.value)}
+                  />
+                </div>
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Photo URL</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Photo URL"
+                  className="input input-bordered"
+                  value={photoURL}
+                  onChange={(e) => setPhotoURL(e.target.value)}
+                />
+              </div>
+            </div>
+            <button className='btn btn-neutral' type="submit">Save Changes</button>
+          </form>
         </div>
-        <div>
-          <label>Photo URL:</label>
-          <input
-            type="text"
-            value={photoURL}
-            onChange={(e) => setPhotoURL(e.target.value)}
-          />
-        </div>
-        <button type="submit">Save Changes</button>
-      </form>
+      </div>
     </div>
   );
 };
 
 export default UpdateProfile;
+
+
