@@ -141,7 +141,7 @@ import 'swiper/css/scrollbar';
 
 const Banner = () => {
     return (
-        <div className="swiper-container" data-aos="fade-up" data-aos-duration="3000" style={{ margin: '0 50px', zIndex: 10 }}>
+        <div className="swiper-container pt-36" data-aos="fade-up" data-aos-duration="3000" style={{ margin: '0 50px', zIndex: 10 }}>
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}

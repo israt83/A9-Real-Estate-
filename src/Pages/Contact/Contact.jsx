@@ -6,7 +6,7 @@ const Contact = () => {
         document.title = 'REALESTATE/CONTACT '; 
     }, []); 
     return (
-		<div>
+		<div className="pt-32">
 			<p className="text-3xl font-bold text-center" data-aos="zoom-in" >CONTACT US</p>
 		
         <section className="py-24 dark:bg-gray-100 dark:text-gray-900 my-14 container mx-auto rounded-lg">
