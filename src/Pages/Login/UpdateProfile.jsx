@@ -120,7 +120,7 @@ const UpdateProfile = () => {
 
   return (
     <div>
-      <div className="hero min-h-screen">
+      <div className="hero min-h-screen" data-aos="zoom-in">
         <div className="hero-content flex-col lg:flex-row-reverse">
             
           <form onSubmit={handleSubmit} className="card flex-shrink-0 w-full lg:w-[500px] shadow-2xl bg-base-100 pt-16">
