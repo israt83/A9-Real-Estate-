@@ -11,7 +11,7 @@ const Details = () => {
     }
 
     return (
-        <div className="container mx-auto rounded-2xl hero min-h-screen bg-base-200 mb-14">
+        <div className="container mx-auto mt-36 rounded-2xl hero min-h-screen bg-base-200 mb-14">
   <div className="hero-content flex-col lg:flex-row">
     <img src={hotel.image} className="w-[600px] h-[500px] rounded-lg shadow-2xl" data-aos="zoom-in"
      data-aos-easing="ease-out-cubic"

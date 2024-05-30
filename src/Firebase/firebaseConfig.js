@@ -25,13 +25,21 @@ import { getAuth } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// const firebaseConfig = {
+//   apiKey: "AIzaSyDZgtgUoARFuN2Fl4It0CYVXfI5sBkZWpc",
+//   authDomain: "react-cherry-hotel-auth.firebaseapp.com",
+//   projectId: "react-cherry-hotel-auth",
+//   storageBucket: "react-cherry-hotel-auth.appspot.com",
+//   messagingSenderId: "763194188521",
+//   appId: "1:763194188521:web:38a1b484afca2f3a720678"
+// };
 const firebaseConfig = {
-  apiKey: "AIzaSyDZgtgUoARFuN2Fl4It0CYVXfI5sBkZWpc",
-  authDomain: "react-cherry-hotel-auth.firebaseapp.com",
-  projectId: "react-cherry-hotel-auth",
-  storageBucket: "react-cherry-hotel-auth.appspot.com",
-  messagingSenderId: "763194188521",
-  appId: "1:763194188521:web:38a1b484afca2f3a720678"
+  apiKey:import.meta.env. VITE_APIKEY,
+  authDomain:import.meta.env. VITE_AUTHDOMAIN,
+  projectId:import.meta.env. VITE_PROJECTID,
+  storageBucket:import.meta.env. VITE_STORAGEBUCKET,
+  messagingSenderId:import.meta.env. VITE_MESSAGINGSENDERID,
+  appId:import.meta.env. VITE_APPID,
 };
 
 // Initialize Firebase
