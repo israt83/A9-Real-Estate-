@@ -54,7 +54,7 @@ const Register = () => {
   return (
     <>
       <ToastContainer />
-      <div className="bg-base-200 my-5"  data-aos="zoom-in">
+      <div className="bg-base-200 my-5 mt-40"  data-aos="zoom-in">
         <h1 className="text-5xl font-bold text-center py-5">Register now!</h1>
         <div className="hero min-h-screen">
           <div className="hero-content flex-col lg:flex-row-reverse">
