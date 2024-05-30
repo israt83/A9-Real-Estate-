@@ -74,7 +74,7 @@ const Login = () => {
                                        
                                 
                                     {errors.password && <span className='text-red-500'>This field is required</span>}
-                                    {/* <PasswordResetModal/> */}
+                                  
                                     <label className="label">
         <a
           onClick={() => document.getElementById("my_modal_2").showModal()}

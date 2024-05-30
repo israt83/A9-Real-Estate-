@@ -1,40 +1,10 @@
 
-// import Banner from "./Banner"
-// import About from "../About/About";
-// import Card from "./Card";
-// // import App from "../../App";
-
-// const Home = () => {
-    
-//     return (
-//         <>
-//             <Banner />
-//             {/* <App></App> */}
-//             <div className="md:col-span-2 ">
-//                     {
-//                         news.map(aNews => <Card key={aNews._id} news={aNews}></Card>)
-//                     }
-//                 </div>
-//             <About />
-//         </>
-//     );
-// };
-
-// export default Home;
-
-// Home.jsx
-// import React from "react";
-
-// Card.jsx
-// import React from "react";
-// Home.jsx
-// import React from "react";
 import Banner from "./Banner";
 import About from "../About/About";
 import Card from "./Card";
 import 'animate.css/animate.min.css';
 
-// import news from "../../news.json";
+
 import { useLoaderData } from "react-router-dom";
 import { useEffect } from "react";
 
