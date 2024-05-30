@@ -120,10 +120,12 @@ const UpdateProfile = () => {
 
   return (
     <div>
-      <h2>Update Profile</h2>
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <form onSubmit={handleSubmit} className="card flex-shrink-0 w-full lg:w-[500px] shadow-2xl bg-base-100">
+            
+          <form onSubmit={handleSubmit} className="card flex-shrink-0 w-full lg:w-[500px] shadow-2xl bg-base-100 pt-16">
+          <h2 className='text-5xl font-bold text-center '>Update Profile</h2>
+
             <div className="card-body">
               <div className="flex gap-4">
                 <div className="form-control w-1/2">
