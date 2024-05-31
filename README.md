@@ -1,4 +1,4 @@
-#Real-estate
+<!-- #Real-estate
 
 ## Live Site Links:
 [Real-estate](https://react-realestate-auth.web.app/)
@@ -20,4 +20,4 @@
 - **Swiper**: For implementing a responsive slider.
 - **AOS**: For scroll animations to enhance user experience.
 - **React Hook Form**: For managing form state and validation.
-- **DaisyUI**: For a utility-first CSS framework to style the components.
+- **DaisyUI**: For a utility-first CSS framework to style the components. -->
