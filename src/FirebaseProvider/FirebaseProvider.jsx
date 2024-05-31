@@ -4,7 +4,7 @@ import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
   onAuthStateChanged,
-  sendPasswordResetEmail,
+  // sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -62,9 +62,9 @@ const FirebaseProvider = ({ children }) => {
   };
 
   // Send reset password request
-  const resetPass = (email) => {
-    return sendPasswordResetEmail(auth, email);
-  };
+  // const resetPass = (email) => {
+  //   return sendPasswordResetEmail(auth, email);
+  // };
 
   // Observer
   useEffect(() => {
@@ -88,7 +88,7 @@ const FirebaseProvider = ({ children }) => {
     user,
     updateUserProfile,
     loading,
-    resetPass,
+    
   };
 
   return (

@@ -2,7 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 const SocialLogin = () => {
-  const { googleLogin, githubLogin, twitterLogin, facebookLogin } = useAuth();
+  const { googleLogin, githubLogin } = useAuth();
 
   // navigation systems
   const navigate = useNavigate();
